@@ -1,10 +1,33 @@
-import discord
-from discord.ext import commands
 from os import name, system
+from time import sleep
 
 if name != "nt":
     input("Désolé, ce programme ne fonctionne que sous Windows!")
     quit()
+
+try:
+    import discord
+except:
+    print("Les modules nécessaires ne sont pas installées.")
+    sleep(1.5)
+    system("cls")
+    print("Tentative d'installation des modules...\n")
+    sleep(0.5)
+    try :
+        system("pip install discord")
+        system("cls")
+        print("Les modules sont maintenant installés.")
+        sleep(1)
+        system("cls")
+        import discord
+    except :
+        print("Erreur lors de la tentative d'installation des modules.")
+        sleep(1.5)
+        print("'pip' n'est probablement pas installé.")
+        input()
+        quit()
+
+from discord.ext import commands
 
 system("color 1")
 
