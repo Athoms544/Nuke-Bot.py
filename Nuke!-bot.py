@@ -1,24 +1,28 @@
 from os import name, system
 from time import sleep
 
-if name != "nt":
-    input("Désolé, ce programme ne fonctionne que sous Windows!")
-    quit()
+if name  == "nt":
+    system("color 1")
+    def clear():
+        clear()
+else:
+    def clear():
+        system("clear")
 
 try:
     import discord
 except:
     print("Les modules nécessaires ne sont pas installées.")
     sleep(1.5)
-    system("cls")
+    clear()
     print("Tentative d'installation des modules...\n")
     sleep(0.5)
     try :
         system("pip install discord")
-        system("cls")
+        clear()
         print("Les modules sont maintenant installés.")
         sleep(1)
-        system("cls")
+        clear()
         import discord
     except :
         print("Erreur lors de la tentative d'installation des modules.")
@@ -29,7 +33,6 @@ except:
 
 from discord.ext import commands
 
-system("color 1")
 
 embed=discord.Embed(title="Nuke!", url="https://github.com/billythegoat356/Nuke!", description="Voici la liste des commandes disponibles : ", color=0x000000)
 embed.add_field(name="!help", value="afficher la liste des commandes disponibles", inline=False)
