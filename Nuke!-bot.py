@@ -12,7 +12,7 @@ else:
 try:
     import discord
 except:
-    print("Les modules nécessaires ne sont pas installées.")
+    print("Les modules nécessaires ne sont pas installés.")
     sleep(1.5)
     clear()
     print("Tentative d'installation des modules...\n")
