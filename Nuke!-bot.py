@@ -217,6 +217,7 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
        
 @bot.event
 async def on_ready():
+    print(f"Le lien permettant de m'ajouter à votre serveur en tant qu'administrateur est : https://discord.com/api/oauth2/authorize?client_id={bot.user.id}&permissions=8&scope=bot\n")
     print("""La liste de mes commandes est:
 
 !help - afficher la liste des commandes disponibles
