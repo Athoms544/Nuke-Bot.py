@@ -307,9 +307,9 @@ async def on_message(message):
         await serveur.edit(name=nom_serveur)
         await serveur.edit(icon=None)
 
-    elif message.content == "!invite":
+    elif message.content == "!link":
         await message.author.send(link)
-        await message.channel.send("Je vous ai envoyé le lien permettant de m'ajouter à votre serveur en privé ^^")
+        await message.channel.send("Je vous ai envoyé le lien permettant d'apprendre à rid un serveur en privé ^^")
     
 
     
