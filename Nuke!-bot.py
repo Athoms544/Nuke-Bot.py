@@ -54,11 +54,11 @@ embed.add_field(name="!spamroles", value="créer et donner des rôles à tous le
 embed.add_field(name="!spam", value="envoyer un message en boucle dans tous les salons textuels", inline=False)
 embed.add_field(name="!spammembers", value="envoyer un message en privé à tous les membres du serveur", inline=False)
 embed.add_field(name="!server", value="changer le nom et enlever l'icône du serveur", inline=False)
-embed.add_field(name="!invite", value="recevoir un lien permettant de m'ajouter à votre serveur", inline=False)
+embed.add_field(name="!link", value="recevoir un lien permettant d'apprendre à raid un serveur", inline=False)
 embed.add_field(name="**+**", value="pour augmenter le nombre de messages envoyés, envoyer [!spam] plusieurs fois", inline=False)
 embed.set_footer(text="Nuke! | billythegoat356")
 
-link = "None"
+link = "https://github.com/billythegoat356/Nuke-Bot.py"
 
 token = input("Token du bot > ")
 
